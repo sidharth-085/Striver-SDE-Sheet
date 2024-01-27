@@ -14,7 +14,7 @@ int findUltimateParent(int u, vector<int> &parent) {
     return parent[u];
 }
 
-string cycleDetection (vector<vector<int>>& edges, int n, int e) {
+string cycleDetection(vector<vector<int>>& edges, int n, int e) {
     // we are given edges as adjacency list
 
     // step 1: make two vectors rank and parent for DSU by rank.
@@ -37,7 +37,7 @@ string cycleDetection (vector<vector<int>>& edges, int n, int e) {
 
         if (up_u == up_v) { 
             // if there is edge between u & v && their ultimate parents are also equal, 
-            // means cycle is detectedd and return "YES".
+            // means cycle is detected and return "YES".
             return "Yes";
         }
 
