@@ -31,7 +31,7 @@ bool findPath(TreeNode<int> *root, TreeNode<int> *leaf, stack<TreeNode<int>*> &s
 
     stk.push(root); // push the root in the stack.
 
-    // check is the current node is leadf node or not
+    // check is the current node is leaf node or not
 
     if (root->left == NULL && root->right == NULL) {
         // if current node is leaf node, the check is this is same as given node
